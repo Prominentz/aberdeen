@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<!--The Aberdeen,
+   Web Promotion + Marketing provided by Embarc Studio
+   Development + Design : Ralph Perricell-->
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>The Aberdeen</title>
+      <link rel="icon" type="image/png" href="img/finishesfavicon.png" />
+      <!--Import style sheets-->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/lightbox.css">
+      <!--Import Fonts + Assets
+         1. Menu Font (Assistant Sans, light 200)
+         2. Header/Display Font(Josefin Sans, light)
+         3. Body Text Font (Comorant, regular)
+         4. Bootstrap Glyphs -->
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400i" rel="stylesheet">
+      <link href="fonts/glyphicons-halflings-regular.svg" rel="stylesheet">
+   </head>
+   <!--Style tag for stupid buttons that dont wanna be styled for some fucking reason-->
+   <style>
+      /*Font Styling*/
+      u {
+      text-decoration: none;
+      border-bottom: 1px solid #ccc;
+      width: 95%;
+      }
+      p.text{
+      /*font-family: 'Cormorant Upright', serif;*/
+      font-size: 1.5rem;
+      text-align: left;
+      }
+      .header {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 4.5rem;
+      letter-spacing: 0.15em;
+      font-weight: normal;
+      }
+      h2.subheader{
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 3.25rem;
+      letter-spacing: 0.15em;
+      font-weight: 100;
+      }
+      .footer {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: lighter;
+      color: #fff;
+      font-size: 1.5rem;
+      }
+      .caption {
+      font-family: 'Libre Baskerville', serif;
+      font-style: normal;
+      font-size: 1rem;
+      padding-top: 0%;
+      text-align: center;
+      }
+      /* END FONT STYLES */
+      .mybtn {
+      background-color: Transparent;
+      background-repeat: no-repeat;
+      width: 100%;
+      margin-top: 5%;
+      color: #000;
+      border-radius: 2px;
+      border: 2px #000;
+      letter-spacing: 0.2em;
+      font-family: 'Josefin Sans', sans-serif;
+      border-style: double;
+      -webkit-transition-duration: 0.5;
+      /* Safari */
+      transition-duration: 0.5s;
+      }
+      .mybtn:hover {
+      background-color: #000;
+      background-repeat: no-repeat;
+      width: 100%;
+      margin-top: 5%;
+      color: #fff;
+      border-radius: 2px;
+      border: 2px #000;
+      letter-spacing: 0.2em;
+      border-style: double;
+      }
+   </style>
+   <!--END Style tag for stupid buttons that dont wanna be styled for some fucking reason-->
+   <body>
+      <div id="wrapper">
+         <!-- Sidebar -->
+         <div id="sidebar-wrapper">
+            <nav id="spy">
+               <ul class="sidebar-nav nav">
+                  <li class="sidebar-brand">
+                     <a href="home.html">
+                     <img src="img/fullLogo.png" height=100px; width=180px;>
+                     </span>
+                     </a>
+                  </li>
+                  <li style="margin-top: 20%;">
+                     <a href="home.html" data-scroll>
+                     <span class="slideEffect">HOME</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="gallery.html" data-scroll>
+                     <span class="slideEffect">GALLERY</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="floorplans.html" data-scroll>
+                     <span class="slideEffect">FLOORPLANS</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" data-scroll>
+                     <span class="current">FEATURES</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="neighborhood.html" data-scroll>
+                     <span class="slideEffect">NEIGHBORHOOD</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="team.html" data-scroll>
+                     <span class="slideEffect">TEAM</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="contact.html" data-scroll>
+                     <span class="slideEffect">CONTACT</span>
+                     </a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+         <!-- Page content -->
+         <div id="page-content-wrapper">
+            <div class="content-header">
+               <h1 id="home">
+                  <a id="menu-toggle" href="#" class="">
+                  <img src="img/aLogo.png" height=60; width=55;>
+                  </a>
+               </h1>
+            </div>
+            <!--END NAV TOGGLE BUTTON-->
+            <!--MAIN PAGE CONTENT SCROLLABLE-->
+            <div class="page-content insetTwo" data-spy="scroll" data-target="#spy">
+               <div class="row" style="z-index:-9999">
+                  <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                     <!-- Indicators -->
+                     <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                     </ol>
+                     <!-- Wrapper for slides -->
+                     <div class="carousel-inner" style="height:60vh;" role="listbox">
+                        <div class="item">
+                           <img src="img/resized/charles.jpg" data-color="lightblue" alt="First Image">
+                           <div class="carousel-caption">
+                              <h3></h3>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <img src="img/resized/fruit.jpg" data-color="firebrick" alt="Second Image">
+                           <div class="carousel-caption">
+                              <h3></h3>
+                           </div>
+                        </div>
+                        <!--<div class="item">
+                           <img src="img/resized/fruit.jpg" data-color="violet" alt="Third Image">
+                           <div class="carousel-caption">
+                              <h3></h3>
+                           </div>
+                           </div>-->
+                     </div>
+                     <!-- Controls -->
+                     <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                     <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                     <span class="sr-only">Next</span>
+                     </a>
+                  </div>
+               </div>
+               <!--Text Header SECTIONSTART-->
+               <div class="container-fluid">
+                  <div class="row" style="margin-top: 5%;">
+                     <!--Header Text-->
+                     <div class="col-sm-10 col-sm-offset-1">
+                        <h1 class="header" style="text-align:center;"><b>ELEGANT LIVING</b></h1>
+                        <p class="text" style="padding-top:7%; line-height:1.75em; text-align-last: center; text-align:center;">
+                           Elegantly designed and luxuriously finished, The Aberdeen is a high end, boutique property with only 40 residences, coming soon for sale. Expertly designed inside and out with a striking modern twist on an Art Deco style, there is simply not a higher quality building in the area.
+                           </br>
+                        </p>
+                     </div>
+
+
+                  <div class="row" style="margin-top:30%;">
+                     <div class="col-md-2 col-md-offset-2">
+                        <figure class="figure">
+                           <img src="img/icons/concierge.png" class="img-responsive">
+                           <figcaption class="figure-caption">Concierge</figcaption>
+                        </figure>
+                     </div>
+                     <div class="col-md-2">
+                        <figure class="figure">
+                           <img src="img/icons/fitness.png" class="img-responsive">
+                           <figcaption class="figure-caption">Fitness Center</figcaption>
+                        </figure>
+                     </div>
+                     <div class="col-md-2">
+                        <figure class="figure">
+                           <img src="img/icons/parking.png" class="img-responsive">
+                           <figcaption class="figure-caption">Parking</figcaption>
+                        </figure>
+                     </div>
+                     <div class="col-md-2">
+                        <figure class="figure">
+                           <img src="img/icons/rooftop.png" class="img-responsive">
+                           <figcaption class="figure-caption">Rooftop Deck Access</figcaption>
+                        </figure>
+                     </div>
+                     <!--Horizontal rule-->
+                     <div class="col-sm-10 col-sm-offset-1" style="margin-top:5%;">
+                        <hr>
+                     </div>
+                  </div>
+               </div>
+             </div>
+               <!--Text Section END-->
+               <!--Gallery explore section-->
+               <div class="container-fluid" style="margin-top:5%;">
+                  <div class="row">
+                     <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h2 class="gallery-title header">View Finish Options</h2>
+                     </div>
+                     <div align="center">
+                        <button style="padding: 20px 20px 20px 20px;" class="btn btn-default filter-button" data-filter="res">Residences</button>
+                        <button style="padding: 20px 20px 20px 20px;" class="btn btn-default filter-button" data-filter="pen">Penthouse</button>
+                     </div>
+                     <br/>
+                     <br/>
+                     <br/>
+                     <br/>
+                     <div class="gallery_product col-md-3 filter pen">
+                        <img src="img/FinalFin/Gas-Range.png" class="img-responsive">
+                     </div>
+                     <div class="gallery_product col-md-3 filter pen res">
+                        <img src="img/FinalFin/Custom-Millwork.png" class="img-responsive">
+                     </div>
+                     <div class="gallery_product col-md-3 filter pen res">
+                        <img src="img/FinalFin/Porcelanosa-Floor.png" class="img-responsive">
+                     </div>
+                     <div class="gallery_product col-md-3 filter pen res">
+                        <img src="img/FinalFin/Backsplash.png" class="img-responsive">
+                     </div>
+                     <div class="gallery_product col-md-3 filter pen res">
+                        <img src="img/FinalFin/Marble-Hex.png" class="img-responsive">
+                     </div>
+                     <div class="gallery_product col-md-3 filter pen res">
+                        <img src="img/FinalFin/Kohler-Sink.png" class="img-responsive">
+                     </div>
+                     <div class="gallery_product col-md-3 filter pen res">
+                        <img src="img/FinalFin/Grohe-Faucet.png" class="img-responsive">
+                     </div>
+                     <div class="gallery_product col-md-3 filter pen res">
+                        <img src="img/FinalFin/Lighting.png" class="img-responsive">
+                     </div>
+                  </div>
+                  <!--END Gallery explore section-->
+                  <!--START FOOTER-->
+                  <div id="foot" class="row" style="position: relative; bottom:0px; background-color:#141505; height:100% auto; min-height:50px;">
+                     <p style="letter-spacing:0.1em; color:#fff; margin-top:12.5px; padding-left:20px;" class="pull-left footer">Press | Legal | Contact</p>
+                     <p style="letter-spacing:0.1em; color:#fff; margin-top:12.5px; padding-right:20px;" class="footer pull-right">1650 Commonwealth Ave., Brighton, 857-383-3111</p>
+                  </div>
+               </div>
+               <!--END FOOTER-->
+            </div>
+         </div>
+      </div>
+      <!--Import Scripts-->
+      <!-- jQuery -->
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Menu Toggle Script -->
+      <script type="text/javascript">
+         $("#menu-toggle").click(function(e) {
+             e.preventDefault();
+             $("#wrapper").toggleClass("active");
+         });
+      </script>
+      <script type="text/javascript">
+         var $item = $('.carousel .item');
+         var $wHeight = $(window).height();
+         $item.eq(0).addClass('active');
+         $item.height($wHeight);
+         $item.addClass('full-screen');
+
+         $('.carousel img').each(function() {
+             var $src = $(this).attr('src');
+             var $color = $(this).attr('data-color');
+             $(this).parent().css({
+                 'background-image': 'url(' + $src + ')',
+                 'background-color': $color
+             });
+             $(this).remove();
+         });
+
+         $(window).on('resize', function() {
+             $wHeight = $(window).height();
+             $item.height($wHeight);
+         });
+
+         $('.carousel').carousel({
+             interval: 10000,
+             pause: "false"
+         });
+      </script>
+      <!--video intro delay-->
+      <script type="text/javascript">
+         $(document).ready(function() {
+
+             $(".filter-button").click(function() {
+                 var value = $(this).attr('data-filter');
+
+                 if (value == "all") {
+                     //$('.filter').removeClass('hidden');
+                     $('.filter').show('1000');
+                 } else {
+                     //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+                     //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                     $(".filter").not('.' + value).hide('3000');
+                     $('.filter').filter('.' + value).show('3000');
+
+                 }
+             });
+
+             if ($(".filter-button").removeClass("active")) {
+                 $(this).removeClass("active");
+             }
+             $(this).addClass("active");
+
+         });
+      </script>
+      <!--LIGHTBOX JS-->
+      <script type="text/javascript">
+         $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+         event.preventDefault();
+         $(this).ekkoLightbox();
+         });
+      </script>
+      <!-- jQuery -->
+      <script src="js/lightbox.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function() {
+
+             $(".filter-buttonAlt").click(function() {
+                 var value = $(this).attr('data-filter');
+
+                 if (value == "all") {
+                     //$('.filter').removeClass('hidden');
+                     $('.filter').show('1000');
+                     $(".filter-buttonAlt").addClass('active');
+                 } else {
+                     //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+                     //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+                     $(".filter").not('.' + value).hide('3000');
+                     $('.filter').filter('.' + value).show('3000');
+
+                 }
+             });
+
+             if ($(".filter-buttonAlt").removeClass("active")) {
+                 $(this).toggleClass("active");
+             }
+             $(this).addClass("active");
+
+         });
+      </script>
+   </body>
+</html>

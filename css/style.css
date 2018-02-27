@@ -1,0 +1,556 @@
+/* Style template for The Aberdeen website
+   and its various pages
+   By : Ralph Perricelli for Embarc Studio */
+
+/* Import fonts etc */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400i');
+
+/* GLOBAL STYLES */
+html, body {
+  height: 100vh;
+  overflow-x: hidden;
+  backface-visibility: hidden;
+  /*background: -webkit-linear-gradient(white, #f2f2f2); /* For Safari 5.1 to 6.0 */
+  /*background: -o-linear-gradient(white, #f2f2f2); /* For Opera 11.1 to 12.0 */
+  /*background: -moz-linear-gradient(white, #f2f2f2); /* For Firefox 3.6 to 15 */
+  /*background: linear-gradient(white, #f2f2f2); /* Standard syntax (must be last) */
+}
+
+/*Font Styling*/
+u {
+   text-decoration: none;
+   border-bottom: 1px solid #ccc;
+   width: 95%;
+ }​
+
+ p.text{
+ /*font-family: 'Cormorant Upright', serif;*/
+ font-family: 'Libre Baskerville', serif;
+ font-size: 1.5rem;
+ text-align: left;
+ }
+
+.header {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: normal;
+}
+
+h2.subheader{
+font-family: 'Josefin Sans', sans-serif;
+font-size: 3.25rem;
+letter-spacing: 0.15em;
+font-weight: 100;
+}
+
+.footer {
+   font-family: 'Josefin Sans', sans-serif;
+   font-weight: 100;
+   font-size: 1.25rem;
+   color:#fff;
+}
+
+.caption {
+  font-family: 'Libre Baskerville', serif;
+  font-style: lighter;
+  text-align: center;
+  font-size: 1rem;
+  padding-top: 0%;
+}
+
+ul,li.list {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.5rem;
+  color: #000;
+  line-height: 4rem;
+  list-style-image: url('../img/bullet.svg');
+  letter-spacing: 0.1em;
+}
+
+.figure-caption {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  color: #000;
+  text-align: center;
+  padding-top: 5%;
+}
+/* END FONT STYLES */
+
+/*Remove scrollbars for full browser width etc*/
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.mybtn {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 5%;
+    color: #000;
+    border-radius: 2px;
+    border: 2px #000;
+    letter-spacing: 0.2em;
+    font-family: 'Josefin Sans', sans-serif;
+    border-style: double;
+    -webkit-transition-duration: 0.5; /* Safari */
+    transition-duration: 0.5s;
+}
+
+.mybtn:hover {
+    background-color: #000;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-top: 5%;
+    color: #fff;
+    border-radius: 2px;
+    border: 2px #000;
+    letter-spacing: 0.2em;
+    border-style: double;
+}
+
+.teamBtn {
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    width: 60%;
+    color: #000;
+    border-radius: 2px;
+    border: 2px #000;
+    margin-top: 15%;
+    letter-spacing: 0.2em;
+    font-family: 'Josefin Sans', sans-serif;
+    border-style: double;
+    -webkit-transition-duration: 0.5; /* Safari */
+    transition-duration: 0.5s;
+}
+.teamBtn:hover {
+  background-color: #000;
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 60%;
+    margin-top: 15%;
+    color: #fff;
+    border-radius: 2px;
+    border: 2px #000;
+    letter-spacing: 0.2em;
+    border-style: double;
+}
+
+/* NAVBAR STYLES
+
+  SIDE BAR STYLING WITH CENTERED TEXT,
+  BOTTOM SHOULD HAVE SMALL TEXT WITH
+  PROPERTY MANAGMENT ETC */
+
+#wrapper {
+  padding-left: 270px;
+  transition: all 0.4s ease 0.2s;
+}
+
+#sidebar-wrapper {
+  margin-left: -275px;
+  left: 275px;
+  width: 270px;
+  background-image: url('../img/menu.png');
+  position: fixed;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+  box-shadow: 3px 0px 3px #000;
+
+  /*ABBOT DOUBLE BORDER*/
+  /*border-width:6px;
+  border-style:double;
+  border-color: #ffffff;*/
+}
+
+#wrapper.active {
+  padding-left: 0px;
+}
+
+#wrapper.active #sidebar-wrapper {
+  left: 0;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  height: 100vh;
+  /*BORDER STYLE
+  border: solid white 2px;
+  background: white;*/
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 275px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  /*Font styles*/
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.sidebar-nav a {
+  color: #F6F6F6;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+.sidebar-nav li {
+  line-height: 30px;
+  text-indent: -5px;
+}
+
+.sidebar-nav li,img {
+  padding-top: 10px;
+}
+
+.sidebar-nav li:hover {
+  line-height: 30px;
+  text-indent: -5px;
+  background-color: transparent;
+}
+
+.sidebar-nav li:after {
+  line-height: 30px;
+  text-indent: -5px;
+  background-color: #000;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  padding-left: 60px;
+}
+
+.sidebar-nav li a span:before {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  line-height: 18px;
+}
+
+.sidebar-nav li a:hover,
+.sidebar-nav li.active {
+  color: #000;
+  /*background: rgba(255,255,255,0.2);*/
+  text-decoration: none;
+  background-color: #000;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+  color: #000000;
+}
+
+/*SIDEBAR STUFF */
+.sidebar-nav > .sidebar-brand {
+  height: 65px;
+  line-height: 60px;
+  font-size: 18px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+  color: #ffffff;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+/* END SIDEBAR BRAND STYLING*/
+
+.current{
+  border-bottom: 1px solid white;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.slideEffect{
+	display: inline-block;
+	position: relative;
+	padding-bottom: -1px;
+}
+.slideEffect:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 1px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.slideEffect:hover:after {
+	width: 100%;
+  margin-left: -5%;
+	background: white;
+}
+
+/* FOR MENU TOGGLE BUTTON */
+.content-header {
+  top: 0;
+  bottom:0;
+  right:0;
+  height: 65px;
+  line-height: 65px;
+  background-color: transparent;
+  position: fixed;
+  margin-top:10px;
+  z-index: 99998;
+}
+
+.content-header h1 {
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  line-height: 65px;
+  display: inline-block;
+  float: right;
+}
+
+#menu-toggle {
+    text-decoration: none;
+    align-items: right;
+}
+
+/* END MENU STYLING */
+
+.inset {
+  padding: 20px;
+}
+
+.insetTwo {
+  margin-top: 0px;
+}
+/* END NAVBAR STYLING */
+
+
+/* CAROUSEL CONTROL */
+h3 {
+  display: inline-block;
+  padding: 10px;
+  background: transparent;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+
+.full-screen {
+  position: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none
+  border: none;
+  height: 200px;
+  top:35%;
+  background-color: transparent;
+}
+
+.carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: none;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 20px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  }
+/* END CAROUSEL STYLING */
+
+/* INTOR VIDEO STYLING */
+#intro {
+  position:fixed;
+  top:0px;
+  width: 100%;
+  height: 100vh;
+  left:0px;
+  z-index: 99999;
+  background: transparent;
+}
+
+#video{
+  height:100vh;
+  width:100%;
+  object-fit: cover;
+  overflow-y: hidden;
+}
+/*END INTRO VIDEO STYLING*/
+
+/*Neightborhood gallery section*/
+.gallery-title
+{
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    left: 46.5%;
+    height: 45px;
+}
+.filter-button
+{
+    font-size: 14px;
+    border: 1px solid black;
+    font-family: 'Libre Baskerville', serif;
+    /*
+    font-family: 'Josefin Sans', sans-serif;*/
+    letter-spacing: 0.1em;
+    border-radius: 2px;
+    border-style: double;
+    background-color: transparent;
+    text-align: center;
+    color: #000;
+    margin-bottom: 15px;
+    margin-right: 15px;
+
+}
+.filter-button:hover
+{
+    font-size: 14px;
+    border: 1px solid black;
+    text-align: center;
+    color: #fff;
+    background-color: black;
+    -webkit-transition-duration: 0.5;
+    /* Safari */
+    transition-duration: 0.5s;
+
+}
+
+/* END ALTRENATE BTN*/
+.filter-buttonAlt
+{
+    font-size: 14px;
+    border: 1px solid black;
+    font-family: 'Libre Baskerville', serif;
+    /*
+    font-family: 'Josefin Sans', sans-serif;*/
+    letter-spacing: 0.1em;
+    border-radius: 2px;
+    border-style: double;
+    background-color: transparent;
+    text-align: center;
+    color: #000;
+    margin-bottom: 15px;
+    margin-right: 15px;
+
+}
+.filter-buttonAlt:hover
+{
+    font-size: 14px;
+    border: 1px solid #ccc;
+    text-align: center;
+    color: #000;
+    background-color: #ccc;
+    -webkit-transition-duration: 0.5;
+    /* Safari */
+    transition-duration: 0.5s;
+
+}
+
+.btn-default:active .filter-button:active
+{
+    background-color: #000;
+    color: white;
+}
+
+/* END ALTRENATE BTN*/
+
+.port-image
+{
+    width: 100%;
+}
+
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+div.capWrap{
+	float:left; /* important */
+	position:relative; /* important(so we can absolutely position the description div */
+}
+div.description{
+	position:absolute; /* absolute position (so we can position it where we want)*/
+	bottom:0px; /* position will be on bottom */
+	left:0px;
+	width:99.95%;
+	/* styling bellow */
+	background-color:black;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size:20px;
+	color:white;
+	opacity:0.8; /* transparency */
+	filter:alpha(opacity=80); /* IE transparency */
+}
+p.description_content{
+	padding:10px;
+	margin:0px;
+  font-weight: lighter;
+  /*font-family: 'Josefin Sans', sans-serif;*/
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.15rem;
+  letter-spacing: 0.15em;
+  text-align: left;
+}
+
+/* end neighborhood section*/
+
+/* MOBILE STYLING START*/
+@media (max-width:767px) {
+
+#wrapper {
+  padding-left: 0;
+}
+
+#sidebar-wrapper {
+  left: 0;
+}
+
+#wrapper.active {
+  position: relative;
+  left: 250px;
+}
+
+#wrapper.active #sidebar-wrapper {
+  left: 250px;
+  width: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+#menu-toggle {
+  display: inline-block;
+}
+
+.inset {
+  padding: 15px;
+}
+
+}
+/* END MOBILE STYLING */

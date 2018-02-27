@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--The Aberdeen,
+   Web Promotion + Marketing provided by Embarc Studio
+   Development + Design : Ralph Perricell-->
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>The Aberdeen</title>
+      <link rel="icon" type="image/png" href="img/favicon.png" />
+      <!--Import style sheets-->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <!--Import Fonts + Assets
+         1. Menu Font (Assistant Sans, light 200)
+         2. Header/Display Font(Josefin Sans, light)
+         3. Body Text Font (Limelight, regular)
+         4. Bootstrap Glyphs -->
+         <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400i" rel="stylesheet">
+      <link href="fonts/glyphicons-halflings-regular.svg" rel="stylesheet">
+   </head>
+   <!--Style tag for stupid buttons that dont wanna be styled for some fucking reason-->
+   <style>
+      /*Font Styling*/
+      u {
+      text-decoration: none;
+      border-bottom: 1px solid #ccc;
+      width: 95%;
+      }
+      p.text{
+      font-family: 'Cormorant Upright', serif;
+      font-size: 1.75rem;
+      text-align: left;
+      }
+      .header {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 4.5rem;
+      letter-spacing: 0.15em;
+      }
+      h2.subheader{
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 3.25rem;
+      letter-spacing: 0.15em;
+      }
+      .footer {
+      font-family: 'Josefin Sans', sans-serif;
+      font-weight: lighter;
+      color: #fff;
+      font-size: 1.5rem;
+      }
+      .caption {
+      font-family: 'Josefin Sans', sans-serif;
+      font-style: normal;
+      font-size: 18px;
+      padding-top: 2%;
+      }
+      /* END FONT STYLES */
+      .mybtn {
+      background-color: Transparent;
+      background-repeat: no-repeat;
+      width: 100%;
+      margin-top: 5%;
+      color: #000;
+      border-radius: 2px;
+      border: 2px #000;
+      letter-spacing: 0.2em;
+      font-family: 'Josefin Sans', sans-serif;
+      border-style: double;
+      -webkit-transition-duration: 0.5;
+      /* Safari */
+      transition-duration: 0.5s;
+      }
+      .mybtn:hover {
+      background-color: #000;
+      background-repeat: no-repeat;
+      width: 100%;
+      margin-top: 5%;
+      color: #fff;
+      border-radius: 2px;
+      border: 2px #000;
+      letter-spacing: 0.2em;
+      border-style: double;
+      }
+   </style>
+   <!--END Style tag for stupid buttons that dont wanna be styled for some fucking reason-->
+   <body>
+      <div id="wrapper">
+         <!-- Sidebar -->
+         <div id="sidebar-wrapper">
+            <nav id="spy">
+               <ul class="sidebar-nav nav">
+                 <li class="sidebar-brand">
+                   <a href="home.html">
+                    <img src="img/fullLogo.png" height=100px; width=180px;>
+                    </span>
+                    </a>
+                 </li>
+                  <li style="margin-top: 20%;">
+                     <a href="home.html" data-scroll>
+                     <span class="slideEffect">HOME</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="#" data-scroll>
+                     <span class="current">GALLERY</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="floorplans.html" data-scroll>
+                     <span class="slideEffect">FLOORPLANS</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="features.html" data-scroll>
+                     <span class="slideEffect">FEATURES</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="neighborhood.html" data-scroll>
+                     <span class="slideEffect">NEIGHBORHOOD</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="team.html" data-scroll>
+                     <span class="slideEffect">TEAM</span>
+                     </a>
+                  </li>
+                  <li>
+                     <a href="contact.html" data-scroll>
+                     <span class="slideEffect">CONTACT</span>
+                     </a>
+                  </li>
+               </ul>
+            </nav>
+         </div>
+         <!-- Page content -->
+         <div id="page-content-wrapper">
+            <div class="content-header">
+               <h1 id="home">
+                  <a id="menu-toggle" href="#" class="">
+                  <img src="img/aLogo.png" height=60; width=55;>
+                  </a>
+               </h1>
+            </div>
+            <!--END NAV TOGGLE BUTTON-->
+            <!--MAIN PAGE CONTENT SCROLLABLE-->
+            <div class="page-content insetTwo container-fluid" data-spy="scroll" data-target="#spy">
+               <div class="row" style="z-index:-9999">
+                  <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                     <!-- Indicators -->
+                     <ol class="carousel-indicators">
+                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#mycarousel" data-slide-to="1"></li>
+                        <li data-target="#mycarousel" data-slide-to="2"></li>
+                        <li data-target="#mycarousel" data-slide-to="3"></li>
+                        <li data-target="#mycarousel" data-slide-to="4"></li>
+                        <li data-target="#mycarousel" data-slide-to="5"></li>
+                     </ol>
+                     <!-- Wrapper for slides -->
+                     <div class="carousel-inner" role="listbox">
+                        <div class="item">
+                           <img src="update/living.png" data-color="lightblue" alt="First Image">
+                           <div class="carousel-caption">
+                              <h3></h3>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <img src="update/living2.png" data-color="firebrick" alt="Second Image">
+                           <div class="carousel-caption">
+                              <h3></h3>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <img src="update/kitchen.png" data-color="violet" alt="Third Image">
+                           <div class="carousel-caption">
+                              <h3></h3>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <img src="update/broom.png" data-color="lightgreen" alt="Fourth Image">
+                           <div class="carousel-caption">
+                              <h3></h3>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- Controls -->
+                     <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                     <span class="sr-only">Previous</span>
+                     </a>
+                     <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                     <span class="sr-only">Next</span>
+                     </a>
+                  </div>
+               </div>
+               <!--START FOOTER-->
+               <div id="foot" class="row" style="position: relative; bottom:0px; background-color:#141505; height:100% auto; min-height:50px;">
+                  <p style="letter-spacing:0.1em; color:#fff; margin-top:12.5px; padding-left:20px;" class="pull-left footer">Press | Legal | Contact</p>
+                  <p style="letter-spacing:0.1em; color:#fff; margin-top:12.5px; padding-right:20px;" class="footer pull-right">1650 Commonwealth Ave., Brighton, 857-383-3111</p>
+               </div>
+            </div>
+            <!--END FOOTER-->
+            </div>
+         </div>
+      </div>
+      <!--Import Scripts-->
+      <!-- jQuery -->
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <!-- Bootstrap Core JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Menu Toggle Script -->
+      <script type="text/javascript">
+         $("#menu-toggle").click(function(e) {
+             e.preventDefault();
+             $("#wrapper").toggleClass("active");
+         });
+      </script>
+      <script type="text/javascript">
+         var $item = $('.carousel .item');
+         var $wHeight = $(window).height();
+         $item.eq(0).addClass('active');
+         $item.height($wHeight);
+         $item.addClass('full-screen');
+
+         $('.carousel img').each(function() {
+             var $src = $(this).attr('src');
+             var $color = $(this).attr('data-color');
+             $(this).parent().css({
+                 'background-image': 'url(' + $src + ')',
+                 'background-color': $color
+             });
+             $(this).remove();
+         });
+
+         $(window).on('resize', function() {
+             $wHeight = $(window).height();
+             $item.height($wHeight);
+         });
+
+         $('.carousel').carousel({
+             interval: 10000,
+             pause: "false"
+         });
+      </script>
+      <!--video intro delay-->
+      <script type="text/javascript">
+         $('#intro').fadeIn('fast').delay(14000).fadeOut('slow');
+      </script>
+   </body>
+</html>
